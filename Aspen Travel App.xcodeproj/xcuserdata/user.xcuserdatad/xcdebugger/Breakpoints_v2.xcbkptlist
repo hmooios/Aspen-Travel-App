@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A380B49A-DFAE-4348-B4A3-1F6FBF175169"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aspen Travel App/TravelViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "TravelViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - 185eef296c498d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.viewForTab.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/Aspen%20Travel%20App/TravelViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - 45cf3264aa3730de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.viewForTab.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/Aspen%20Travel%20App/TravelViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - 3868bc0d296edc3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.viewForTab.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/Aspen%20Travel%20App/TravelViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - 6c92bf6cdae4c801"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.viewForTab.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - b07f509412f495ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Aspen_Travel_App.TravelViewController"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/Aspen%20Travel%20App/TravelViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "EBF08962-B587-43B8-A05D-ED54E73E67B2 - 2f2e681383387673"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aspen_Travel_App.TravelViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Aspen_Travel_App.TravelViewController&gt;"
+                  moduleName = "Aspen Travel App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/DevelopX/Aspen%20Travel%20App/Aspen%20Travel%20App/TravelViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9893DB65-25B9-44CB-94D6-9299EB70BD79"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aspen Travel App/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "MyPopularCollectionCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
