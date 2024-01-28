@@ -21,6 +21,8 @@
 		CE6F69A72B61E38100D76AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F69A62B61E38100D76AE9 /* ViewController.swift */; };
 		CE6F69A92B62077F00D76AE9 /* Hiatus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE6F69A82B62077F00D76AE9 /* Hiatus.ttf */; };
 		CE6F69AB2B620A0300D76AE9 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE6F69AA2B620A0300D76AE9 /* Montserrat-VariableFont_wght.ttf */; };
+		CEA8458B2B65D14C00BFABDA /* PopularDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8458A2B65D14C00BFABDA /* PopularDetailViewController.swift */; };
+		CEA8458D2B65D28200BFABDA /* PopularPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8458C2B65D28200BFABDA /* PopularPlaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		CE6F69A62B61E38100D76AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE6F69A82B62077F00D76AE9 /* Hiatus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hiatus.ttf; sourceTree = "<group>"; };
 		CE6F69AA2B620A0300D76AE9 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		CEA8458A2B65D14C00BFABDA /* PopularDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDetailViewController.swift; sourceTree = "<group>"; };
+		CEA8458C2B65D28200BFABDA /* PopularPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPlaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +82,14 @@
 				CE5E3CCA2B60D27F009DCF5A /* TravelViewController.swift */,
 				CE3C5C1F2B6377CC008B0588 /* TabbarController.swift */,
 				CE5E3CCC2B60D27F009DCF5A /* Main.storyboard */,
+				CEA8458A2B65D14C00BFABDA /* PopularDetailViewController.swift */,
 				CE6F69AA2B620A0300D76AE9 /* Montserrat-VariableFont_wght.ttf */,
 				CE6F69A82B62077F00D76AE9 /* Hiatus.ttf */,
 				CE6F69A02B61DCB700D76AE9 /* TicketViewController.swift */,
 				CE6F69A42B61DCE800D76AE9 /* ProfileViewController.swift */,
 				CE6F69A22B61DCD200D76AE9 /* WishlistViewController.swift */,
 				CE6F699E2B61DB0A00D76AE9 /* HomeViewController.swift */,
+				CEA8458C2B65D28200BFABDA /* PopularPlaces.swift */,
 				CE5E3CCF2B60D282009DCF5A /* Assets.xcassets */,
 				CE5E3CD12B60D282009DCF5A /* LaunchScreen.storyboard */,
 				CE5E3CD42B60D282009DCF5A /* Info.plist */,
@@ -169,8 +175,10 @@
 				CE6F69A12B61DCB700D76AE9 /* TicketViewController.swift in Sources */,
 				CE5E3CC72B60D27F009DCF5A /* AppDelegate.swift in Sources */,
 				CE6F69A52B61DCE800D76AE9 /* ProfileViewController.swift in Sources */,
+				CEA8458B2B65D14C00BFABDA /* PopularDetailViewController.swift in Sources */,
 				CE5E3CC92B60D27F009DCF5A /* SceneDelegate.swift in Sources */,
 				CE6F69A72B61E38100D76AE9 /* ViewController.swift in Sources */,
+				CEA8458D2B65D28200BFABDA /* PopularPlaces.swift in Sources */,
 				CE3C5C202B6377CC008B0588 /* TabbarController.swift in Sources */,
 				CE6F699F2B61DB0A00D76AE9 /* HomeViewController.swift in Sources */,
 			);

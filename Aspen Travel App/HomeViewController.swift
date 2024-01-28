@@ -18,10 +18,7 @@ class HomeViewController: UIViewController {
     var categories : [String] = [
         "Location","Hotels","Food","Adventure","Adventure"
     ]
-    var popularArray : [String:[String]] = [
-        "title":["Alley Place","Coeurdes Alpes","Alley Place","Coeurdes Alpes"],
-        "image": ["popularPlace1","popularPlace1","popularPlace1","popularPlace1"]
-    ]
+    var popularPlaces = PopularPlaces()
   
     var recommendedPlacesImages : [String] = [
         "recommendedPlace1","recommendedPlace2","recommendedPlace1","recommendedPlace2"
@@ -32,25 +29,12 @@ class HomeViewController: UIViewController {
     var durations : [String] = [
     "4N/5D","2N/3D","4N/5D","2N/3D"
     ]
-    var ratings : [String] = [
-    "4.1","4.5","4.1","4.5"
-    ]
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         designableSearchView()
-
-    
-       
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        categoryCollectionView.reloadData()
-//        popularCollectionView.reloadData()
-//        recommendedCollectionView.reloadData()
-//    }
+
     func designableSearchView(){
         searchView.layer.cornerRadius = searchView.frame.size.height / 2
     }
@@ -62,7 +46,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == categoryCollectionView {
             return categories.count
         } else if collectionView == popularCollectionView {
-            return popularArray["title"]?.count ?? 0
+            return popularPlaces.title.count
         }else if collectionView == recommendedCollectionView{
             return recommendedPlacesImages.count
         }
@@ -76,9 +60,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         } else if collectionView == popularCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as! MyPopularCollectionCell
-            cell.placeTitle.text = popularArray["title"]?[indexPath.row]
-            cell.popularPlaceImage.image = UIImage(named: popularArray["image"]?[indexPath.row] ?? "star")
-            cell.rating.text = ratings[indexPath.row]
+            cell.placeTitle.text = popularPlaces.title[indexPath.row]
+            cell.popularPlaceImage.image = UIImage(named: popularPlaces.image[indexPath.row])
+            cell.rating.text = popularPlaces.ratings[indexPath.row]
            
             return cell
         }else if collectionView == recommendedCollectionView{
@@ -91,6 +75,24 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         return UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == popularCollectionView{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let popularDetailViewController = storyboard.instantiateViewController(withIdentifier: "PopularDetailViewController") as! PopularDetailViewController
+            
+            let placeImage = UIImage(named: popularPlaces.image[indexPath.row])
+            
+            // Set the selected image in PopularDetailViewController
+            popularDetailViewController.selectedImage = placeImage
+            popularDetailViewController.selectedTitle = popularPlaces.title[indexPath.row]
+            
+            popularDetailViewController.modalPresentationStyle = .fullScreen
+            present(popularDetailViewController, animated: true, completion: nil)
+        }
+    }
+
+
     
 
     func collectionView(_ collectionView: UICollectionView,
