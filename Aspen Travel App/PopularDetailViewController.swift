@@ -21,6 +21,16 @@ class PopularDetailViewController: UIViewController {
     @IBOutlet var readMoreButton: UIButton!
     
     @IBOutlet var facilitiesCollectionView: UICollectionView!
+
+   // @IBOutlet var facilitiesContentView: UIView!
+    
+    var facilitiesImage:[String] = [
+    "wifi","food","bathTub","pool"
+    ]
+    var facilitiesTitle:[String] = [
+    "1 Heater","Dinner","1 Tub","Pool"
+    ]
+    
     
     let maxLines: Int = 3
     var isExpanded: Bool = false
@@ -88,5 +98,24 @@ class PopularDetailViewController: UIViewController {
 }
 
 class FacilitiesCollectionViewCell : UICollectionViewCell{
+    
+    @IBOutlet var facilitiesImage: UIImageView!
+    @IBOutlet var facilitiesTitle: UILabel!
+}
+
+extension PopularDetailViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return facilitiesImage.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = facilitiesCollectionView.dequeueReusableCell(withReuseIdentifier: "facilitiesCell", for: indexPath) as! FacilitiesCollectionViewCell
+    
+        cell.facilitiesImage.image = UIImage(named: facilitiesImage[indexPath.row])
+        cell.facilitiesTitle.text = facilitiesTitle[indexPath.row]
+
+        return cell
+    }
+    
     
 }

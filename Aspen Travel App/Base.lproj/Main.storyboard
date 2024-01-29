@@ -733,9 +733,83 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="po8-5E-fKJ">
+                                                <rect key="frame" x="8" y="512.33333333333337" width="377" height="71.666666666666629"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71.670000000000002" id="YJe-aT-3NA"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Oq-Yw-zGg">
+                                                    <size key="itemSize" width="105" height="68"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="facilitiesCell" id="vYY-Tk-sE4" customClass="FacilitiesCollectionViewCell" customModule="Aspen_Travel_App" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="1.6666666666666667" width="77" height="68"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fKH-ft-ocj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="77" height="68"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjh-n8-CPM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="77" height="68"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-66-qPi">
+                                                                            <rect key="frame" x="22" y="10" width="32" height="32"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="32" id="4Hq-L9-kD8"/>
+                                                                                <constraint firstAttribute="height" constant="32" id="Vot-4q-fln"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2I-E3-YjN">
+                                                                            <rect key="frame" x="5" y="47" width="67" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                                                            <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="fvj-66-qPi" firstAttribute="top" secondItem="zjh-n8-CPM" secondAttribute="top" constant="10" id="8qZ-h8-XE7"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="T2I-E3-YjN" secondAttribute="bottom" constant="5" id="JIb-jM-icJ"/>
+                                                                        <constraint firstItem="T2I-E3-YjN" firstAttribute="leading" secondItem="zjh-n8-CPM" secondAttribute="leading" constant="5" id="aei-Nr-GzC"/>
+                                                                        <constraint firstItem="T2I-E3-YjN" firstAttribute="top" secondItem="fvj-66-qPi" secondAttribute="bottom" constant="5" id="fMt-FM-0vO"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="T2I-E3-YjN" secondAttribute="trailing" constant="5" id="pBf-Xz-msI"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="fvj-66-qPi" secondAttribute="trailing" constant="23" id="uNY-ny-HG7"/>
+                                                                        <constraint firstItem="fvj-66-qPi" firstAttribute="leading" secondItem="zjh-n8-CPM" secondAttribute="leading" constant="22" id="xnB-9h-5T7"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="lzy" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.93333333330000001" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="zjh-n8-CPM" firstAttribute="top" secondItem="fKH-ft-ocj" secondAttribute="top" id="1tg-xj-Ysz"/>
+                                                                <constraint firstAttribute="bottom" secondItem="zjh-n8-CPM" secondAttribute="bottom" id="KJX-OM-lOW"/>
+                                                                <constraint firstItem="zjh-n8-CPM" firstAttribute="leading" secondItem="fKH-ft-ocj" secondAttribute="leading" id="Ut8-X8-OJa"/>
+                                                                <constraint firstAttribute="trailing" secondItem="zjh-n8-CPM" secondAttribute="trailing" id="aZb-HL-Gky"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="77" height="68"/>
+                                                        <connections>
+                                                            <outlet property="facilitiesImage" destination="fvj-66-qPi" id="GEj-Z1-tB0"/>
+                                                            <outlet property="facilitiesTitle" destination="T2I-E3-YjN" id="XJk-in-5nt"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="GPg-i9-T5o" id="Np4-SP-yQX"/>
+                                                    <outlet property="delegate" destination="GPg-i9-T5o" id="wyL-JR-hFc"/>
+                                                </connections>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="po8-5E-fKJ" secondAttribute="bottom" constant="154" id="86B-RC-aUE"/>
+                                            <constraint firstAttribute="trailing" secondItem="po8-5E-fKJ" secondAttribute="trailing" constant="8" id="DZd-hI-fnp"/>
                                             <constraint firstItem="2Ka-ju-cu7" firstAttribute="leading" secondItem="Dsc-xA-f5N" secondAttribute="leading" constant="8" id="EDD-Cw-WuQ"/>
                                             <constraint firstItem="o7c-ST-Pil" firstAttribute="leading" secondItem="Zos-Lj-Vhd" secondAttribute="leading" constant="10" id="GRW-Vp-hSU"/>
                                             <constraint firstItem="Zos-Lj-Vhd" firstAttribute="top" secondItem="Dsc-xA-f5N" secondAttribute="top" constant="20" id="JQZ-Cw-hc4"/>
@@ -752,7 +826,9 @@
                                             <constraint firstAttribute="trailing" secondItem="2Ka-ju-cu7" secondAttribute="trailing" constant="10" id="ZsF-sQ-OZV"/>
                                             <constraint firstAttribute="trailing" secondItem="Zos-Lj-Vhd" secondAttribute="trailing" constant="8" id="cZl-AA-x4X"/>
                                             <constraint firstItem="jHY-9z-OcQ" firstAttribute="leading" secondItem="Dsc-xA-f5N" secondAttribute="leading" constant="8" id="cmO-Kj-8WO"/>
+                                            <constraint firstItem="po8-5E-fKJ" firstAttribute="top" secondItem="jHY-9z-OcQ" secondAttribute="bottom" constant="10" id="dtM-az-6bG"/>
                                             <constraint firstItem="m3P-7y-JhA" firstAttribute="leading" secondItem="8BY-cH-WWs" secondAttribute="trailing" id="gCO-b4-x2F"/>
+                                            <constraint firstItem="po8-5E-fKJ" firstAttribute="leading" secondItem="Dsc-xA-f5N" secondAttribute="leading" constant="8" id="hoJ-wX-3JC"/>
                                             <constraint firstItem="R1i-9q-NME" firstAttribute="top" secondItem="Zos-Lj-Vhd" secondAttribute="bottom" constant="28" id="iCb-2A-y10"/>
                                             <constraint firstItem="wTP-ij-DEG" firstAttribute="leading" secondItem="Dsc-xA-f5N" secondAttribute="leading" constant="10" id="jE0-Du-osy"/>
                                             <constraint firstItem="MpX-gj-d8h" firstAttribute="top" secondItem="wTP-ij-DEG" secondAttribute="bottom" constant="5" id="jmd-oI-JWw"/>
@@ -788,6 +864,7 @@
                     <connections>
                         <outlet property="backView" destination="o7c-ST-Pil" id="FFd-bp-UO2"/>
                         <outlet property="bookNowButtonView" destination="Kpg-nF-Zgx" id="G1M-Ro-ySM"/>
+                        <outlet property="facilitiesCollectionView" destination="po8-5E-fKJ" id="3nO-n7-vmX"/>
                         <outlet property="popularPlaceImage" destination="Zos-Lj-Vhd" id="Zur-Zz-LJB"/>
                         <outlet property="popularPlaceOverview" destination="2Ka-ju-cu7" id="2gc-Ea-Kp0"/>
                         <outlet property="popularPlaceTitle" destination="wTP-ij-DEG" id="SqJ-qQ-ILh"/>
